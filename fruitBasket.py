@@ -1,3 +1,4 @@
+# Define a function and return fruit_basket list of one dictionary
 def basket():
     fruit_basket = [{
         "apple": "5",

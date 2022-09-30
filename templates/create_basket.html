@@ -23,18 +23,18 @@ body {
 </head>
 <body>
 
-<h3>Create a Custom Fruit Basket</h3>
+  <h1>Create a Custom Fruit Basket</h3>
 
-<form action="{{ url_for('add_fruit') }}" method="POST">
-  Fruit:
-  <br><input type="text" name="fruit" /><br>
-  
-  Quantity:
-  <br><input type="text" name="quantity" /><br>
-  <input type="submit" value="add fruit" /><br>
-</form>
+  <form action="{{ url_for('add_fruit') }}" method="POST">
+    Fruit:
+    <br><input type="text" name="fruit" /><br>
+    
+    Quantity:
+    <br><input type="text" name="quantity" /><br>
+    <input type="submit" value="add fruit" /><br>
+  </form>
 
-<a href="/view_basket">View Custom Fruit Basket</a>
+  <a href="/view_basket">View Custom Fruit Basket</a>
 
 </body>
 </html>
