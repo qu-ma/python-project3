@@ -1,24 +1,21 @@
 #!/usr/bin/python3
 
 from flask import Flask
-from flask import request
-from flask import redirect
 from flask import jsonify
 from flask import render_template
-from flask import url_for
 from fruitBasket import basket
 
 app = Flask(__name__)
 
-# Starting Endpoint that doesn't take a user name
+# Starting Endpoint that doesn't take a name
 @app.route("/")
 def index_no_name():
-    return render_template("index.html")
+    return render_template("index_no_name.html")
 
-# Endpoint that takes a user name
+# Endpoint that takes a name
 @app.route("/<name>")
 def index_with_name(name):
-    return render_template("index.html", user_name = name)
+    return render_template("index_with_name.html", username = name)
 
 # Fruits Endpoint
 @app.route("/fruits")
